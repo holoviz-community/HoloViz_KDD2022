@@ -21,6 +21,22 @@ This tutorial will show you how to do visualization and build interactive dashbo
 | **Real Time Dashboard** <br /> Create streaming dataframe with `streatmz` <br /> Create databoard with `pn.bind` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/sophiamyang/HoloViz_KDD2022/blob/main/05_Real_Time_Dashboard.ipynb) |
 | **Deployment** <br /> Local deployment <br /> Save to .html files <br /> Cloud deployment <br /> PyScript | link to be added |
 
+## **Set up**
+You can run the tutorials through the links above. To run this tutorial locally, you will need to do the following steps:
+- Download Anaconda or Miniconda
+- Git clone this repository and navigate to the folder
+```
+git clone git@github.com:sophiamyang/HoloViz_KDD2022.git
+cd HoloViz_KDD2022
+```
+- Create a new Conda enviornment with needed packages and activate this enviornment
+```
+conda create --name holoviz -c conda-forge hvplot panel pandas jupyterlab streamz
+conda activate holoviz
+```
+- Start Jupyter Notebook `jupyter notebook` or Jupyter Lab `jupyterlab`
+
+
 
 ## **References**
 https://holoviz.org <br />
