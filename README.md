@@ -1,4 +1,4 @@
-# HoloViz KDD2022 Tutorial
+# HoloViz Tutorial
 
 ## **Authors**
 - Sophia Yang, Anaconda
