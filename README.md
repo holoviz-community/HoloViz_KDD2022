@@ -43,9 +43,9 @@ https://holoviz.org <br />
 https://hvplot.holoviz.org <br />
 https://datashader.org <br />
 https://panel.holoviz.org <br />
-Tutorial <a href="https://anaconda.cloud/easy-plotting-for-streaming-data">Easy Plotting for Streaming Data</a> by James A. Bednar
+Tutorial <a href="https://www.youtube.com/watch?v=xlFMLQKZi3I">Easily build interactive plots and apps with hvPlot</a> by Philipp Rudiger and Maxime Liquet
 <br>
-Tutorial <a href="https://www.youtube.com/watch?v=xlFMLQKZi3I">Easily build interactive plots and apps with hvPlot</a> by Philipp Rudiger Maxime Liquet
+Tutorial <a href="https://anaconda.cloud/easy-plotting-for-streaming-data">Easy Plotting for Streaming Data</a> by James A. Bednar
 <br>
 Blog post <a href="https://sophiamyang.medium.com/python-dashboarding-ecosystem-and-landscape-cc055b50c668?sk=08add22d8399b2b78b70af599b52fd12">Python Dashboarding Ecosystem and Landscape: Plotly Dash, Panel, Voila, and Streamlit</a> by Sophia Yang
 <br>
