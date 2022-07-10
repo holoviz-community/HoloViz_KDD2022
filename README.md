@@ -52,7 +52,7 @@ Blog post <a href="https://towardsdatascience.com/big-data-visualization-using-d
 <br>
 Tutorial <a href="https://anaconda.cloud/easy-plotting-for-streaming-data">Easy Plotting for Streaming Data</a> by James A. Bednar
 <br>
-Blog post <a href="https://www.youtube.com/watch?v=xlFMLQKZi3I">Easily build interactive plots and apps with hvPlot</a> by Philipp Rudiger Maxime Liquet
+Tutorial <a href="https://www.youtube.com/watch?v=xlFMLQKZi3I">Easily build interactive plots and apps with hvPlot</a> by Philipp Rudiger Maxime Liquet
 
 
 
