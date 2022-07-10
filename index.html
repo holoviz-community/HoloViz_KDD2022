@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<style>
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 10px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-twitter {
+        background: white;
+        color: #55ACEE;
+    }
+    
+    
+    .fa-linkedin {
+        background: white;
+        color: #007bb5;
+    } 
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>HoloViz</b> Tutorial</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#abstract" class="w3-bar-item w3-button">Abstract</a>
+      <a href="#outline" class="w3-bar-item w3-button">Outline</a>
+      <a href="#setup" class="w3-bar-item w3-button">Setup</a>
+      <a href="#authors" class="w3-bar-item w3-button">Authors</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="assets/usa_census.jpeg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>HoloViz</b></span> <span class="w3-hide-small w3-text-light-grey">Tutorial</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+    <!-- Abstract Section -->
+    <div class="w3-container w3-padding-32" id="abstract">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Abstract</h3>
+    <p>This tutorial will show you how to do visualization and build 
+        interactive dashboards using HoloViz, which is an open-source 
+        visualization ecosystem comprising seven packages. 
+        You will learn how to turn nearly any notebook into a deployable dashboard, 
+        how to build visualizations easily even for big, streaming, and multidimensional data, 
+        how to build interactive drill-down exploratory tools for your data and models 
+        without having to run a web-technology software development project, 
+        and finally how to deploy your dashboard.
+    </p>
+    </div>
+
+
+  <!-- Outline Section -->
+  <div class="w3-container w3-padding-32" id="outline">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Outline</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/01_Overview.ipynb">
+        <div class="w3-display-topleft w3-black w3-padding">Python Viz Overview</div>
+        <img src="assets/landscape-colors.png" alt="House" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/02_Plotting.ipynb">
+        <div class="w3-display-topleft w3-black w3-padding">Plotting</div>
+        <img src="assets/plotting.png" alt="House" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/03_Big_Data_Visualization.ipynb">
+        <div class="w3-display-topleft w3-black w3-padding">Big Data Visualization</div>
+        <img src="assets/sym_attractors.jpeg" alt="House" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+        <a href="https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/04_Dashboard.ipynb">
+          <div class="w3-display-topleft w3-black w3-padding">Dashboard</div>
+          <img src="assets/easy-dataframe-dashboards.gif" alt="House" style="width:100%">
+        </a>
+        </div>
+      </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/05_Real_Time_Dashboard.ipynb">
+        <div class="w3-display-topleft w3-black w3-padding">Real Time Dashboard</div>
+        <img src="assets/df_composite.gif" alt="House" style="width:99%">
+        </a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Deployment</div>
+        <img src="assets/pyscript.png" alt="House" style="width:99%">
+      </div>
+    </div>
+    
+  </div>
+
+
+  <!-- Setup Section -->
+  <div class="w3-container w3-padding-32" id="setup">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Setup</h3>
+    <p> You can run the tutorials through the links above (click on the image). To run this tutorial locally, you will need to do the following steps:
+        <br>
+        1. Download Anaconda or Miniconda
+        <br>
+        2. Git clone this repository and navigate to the folder
+        <pre style=" hidden;font-family:monaco;"> 
+        git clone git@github.com:sophiamyang/HoloViz_tutorial2022.git
+        cd HoloViz_tutorial2022
+        </pre>
+
+        3. Create a new Conda enviornment with needed packages and activate this enviornment
+        <pre style=" hidden;font-family:monaco;"> 
+        conda create --name holoviz -c conda-forge hvplot panel pandas jupyterlab streamz
+        conda activate holoviz
+        </pre>
+        4. Start Jupyter Notebook jupyter notebook or Jupyter Lab jupyterlab
+    </p>
+    </div>
+  
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="authors">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Authors</h3>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="assets/sophia.jpeg" alt="John" style="width:100%">
+      <h3>Sophia Yang, PhD</h3>
+      <p class="w3-opacity"> Senior Data Scientist at Anaconda</p>
+      <a href="https://twitter.com/sophiamyang" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/sophiamyang/" class="fa fa-linkedin"></a>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="assets/marc.jpeg" alt="Jane" style="width:100%">
+      <h3>Marc Skov Madsen, PhD</h3>
+      <p class="w3-opacity">Lead Data Science Developer at Ørsted</p>
+      <a href=http://datamodelsanalytics.com class="w3-opacity">http://datamodelsanalytics.com</a>
+      <a href="https://twitter.com/MarcSkovMadsen" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/marcskovmadsen/" class="fa fa-linkedin"></a>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="assets/jim.jpeg" alt="Mike" style="width:100%">
+      <h3>James A. Bednar, PhD</h3>
+      <p class="w3-opacity">Director of Customer Service at Anaconda</p>
+      <a href="https://twitter.com/JamesABednar" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/james-bednar-7602911b/" class="fa fa-linkedin"></a>
+    </div>
+    <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="assets/philipp.png" alt="Dan" style="width:100%">
+      <h3>Philipp Rudiger, PhD</h3>
+      <p class="w3-opacity">Staff Software Engineer at Anaconda</p>
+      <a href="https://twitter.com/PhilippJFR" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/philippjfr/" class="fa fa-linkedin"></a>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="assets/jean-luc.png" alt="Dan" style="width:100%">
+        <h3>Jean-Luc Stevens, PhD</h3>
+        <p class="w3-opacity">Senior Software Engineer at Anaconda</p>
+      </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="assets/max.jpeg" alt="Dan" style="width:100%">
+        <h3>Maxime Liquet</h3>
+        <p class="w3-opacity">Software Engineer at Anaconda</p>
+        <a href="https://twitter.com/MaximeLiquet" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/maxime-liquet/" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
