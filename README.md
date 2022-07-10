@@ -43,16 +43,17 @@ https://holoviz.org <br />
 https://hvplot.holoviz.org <br />
 https://datashader.org <br />
 https://panel.holoviz.org <br />
+Tutorial <a href="https://anaconda.cloud/easy-plotting-for-streaming-data">Easy Plotting for Streaming Data</a> by James A. Bednar
+<br>
+Tutorial <a href="https://www.youtube.com/watch?v=xlFMLQKZi3I">Easily build interactive plots and apps with hvPlot</a> by Philipp Rudiger Maxime Liquet
+<br>
 Blog post <a href="https://sophiamyang.medium.com/python-dashboarding-ecosystem-and-landscape-cc055b50c668?sk=08add22d8399b2b78b70af599b52fd12">Python Dashboarding Ecosystem and Landscape: Plotly Dash, Panel, Voila, and Streamlit</a> by Sophia Yang
 <br>
 Blog post <a href="https://sophiamyang.medium.com/the-easiest-way-to-create-an-interactive-dashboard-in-python-77440f2511d1?sk=e1ea8c40c090cdbe7689333267f73b25">The Easiest Way to Create an Interactive Dashboard in Python Visualization: Turn Pandas pipelines into a dashboard using hvPlot .interactive</a> 
 by Sophia Yang and Marc Skov Madsen
 <br>
 Blog post <a href="https://towardsdatascience.com/big-data-visualization-using-datashader-in-python-c3fd00b9b6fc?sk=2e619dad70084fbf69d26cff55930f84">Big Data Visualization Using Datashader in Python</a> by Sophia Yang
-<br>
-Tutorial <a href="https://anaconda.cloud/easy-plotting-for-streaming-data">Easy Plotting for Streaming Data</a> by James A. Bednar
-<br>
-Tutorial <a href="https://www.youtube.com/watch?v=xlFMLQKZi3I">Easily build interactive plots and apps with hvPlot</a> by Philipp Rudiger Maxime Liquet
+
 
 
 
