@@ -19,7 +19,7 @@ This tutorial will show you how to do visualization and build interactive dashbo
 | **Big Data Visualization**  <br /> Considerations with big data analytics <br /> Big data visualization with `Datashader` and `hvplot` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/03_Big_Data_Visualization.ipynb) |
 | **Dashboard**  <br /> Turn Pandas pipelines into a dashboard using `hvPlot .interactive`| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/04_Dashboard.ipynb) |
 | **Real Time Dashboard** <br /> Create streaming dataframe with `streamz` <br /> Create databoard with `pn.bind` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sophiamyang/HoloViz_tutorial2022/blob/main/05_Real_Time_Dashboard.ipynb) |
-| **Deployment** <br /> Local deployment <br /> Save to .html files <br /> Cloud deployment <br /> PyScript | link to be added |
+| **Deployment** <br /> Local deployment <br /> Save to .html files <br /> Cloud deployment <br /> PyScript | [Slides](https://sophiamyang.github.io/HoloViz_tutorial2022/06_Deployment.html) |
 
 ## **Set up**
 You can run the tutorials through the links above. To run this tutorial locally, you will need to do the following steps:
