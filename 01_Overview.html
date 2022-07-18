@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; font-size:30px}
+
+/* Slideshow container */
+.slideshow-container {
+  /* position: relative; */
+  /* background: #f1f1f1f1; */
+  background: #f1f1f1f1;
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+}
+
+
+/* Slides */
+.mySlides {
+  display: none;
+  /* padding: 80px; */
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  /* top:30%;
+  left:0;font-family: Verdana, sans-serif; margin:0; font-size:30px */
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.title {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <img src="assets/Overview/1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/2.jpg">
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/3.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/4.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/5.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/6.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/7.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/8.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/9.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/10.jpg" >
+  </div>
+  
+  <div class="mySlides">
+    <img src="assets/Overview/10.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/11.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/12.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/13.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/14.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/15.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/16.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/17.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/18.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/19.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/20.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/21.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/22.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/23.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/24.jpg" >
+  </div>
+
+  <div class="mySlides">
+    <img src="assets/Overview/25.jpg" >
+  </div>
+  
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
