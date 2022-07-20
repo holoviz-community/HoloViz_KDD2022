@@ -1,205 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> -->
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
-<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.js"></script>
-<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
-<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.1/dist/panel.min.js"></script>
-<py-env>
-  - numpy
-  - matplotlib
-  - pandas
-  - hvplot
-</py-env>
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.1/dist/panel.min.js"></script>
+    <py-env>
+      - numpy
+      - matplotlib
+      - pandas
+      - hvplot
+    </py-env>
+    
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0; font-size:30px}
 
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0; font-size:30px}
-
-/* Slideshow container */
-.slideshow-container {
-  /* position: relative; */
-  /* background: #f1f1f1f1; */
-  background: #f1f1f1f1;
-  height: 100%;
-  width: 100%;
-  position:fixed;
-  padding:0;
-  margin:0;
-
-  top:0;
-  left:0;
-}
-
-.cm-content {
-  text-align: left;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  /* padding: 80px; */
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  position:absolute;
-  padding:0;
-  margin:0;
-
-  /* top:30%;
-  left:0;font-family: Verdana, sans-serif; margin:0; font-size:30px */
-  
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-
-.title {color: cornflowerblue;}
-</style>
-</head>
-<body>
-
-<div class="slideshow-container">
-
-  <div class="mySlides">
-    <img src="assets/slide1.png" alt=”an artist's rendition of a black hole in space”>
-  </div>
-
-  <div class="mySlides">
-  <style>
-    body {
-      background-image: url('assets/slide1.png');
-      background-repeat: no-repeat;
+    /* Slideshow container */
+    .slideshow-container {
+      /* position: relative; */
+      /* background: #f1f1f1f1; */
+      background: #f1f1f1f1;
+      height: 100%;
+      width: 100%;
+      position:fixed;
+      padding:0;
+      margin:0;
+      top:0;
+      left:0;
     }
+
+
+    /* Slides */
+    .mySlides {
+      display: none;
+      /* padding: 80px; */
+      /* text-align: center; */
+      height: 100%;
+      width: 100%;
+      position:fixed;
+      padding:0;
+      margin:0;
+
+      /* top:30%;
+      left:0;font-family: Verdana, sans-serif; margin:0; font-size:30px */
+    }
+
+    .mySlides > img {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #888;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+
     </style>
-  </div>
+  </head>
 
-<!-- 
-<div class="mySlides">
-  <h1 class="title">HoloViz Deployment</h1>
-  <p class="author"> Sophia Yang</p>
-  <p class="author"> Marc Skov Madsen</p>
-  <p class="author"> James A. Bednar</p>
-  <p class="author"> Philipp Rudiger</p>
-  <p class="author"> Jean-Luc Stevens</p>
-  <p class="author"> Maxime Liquet</p>
-</div>
+  <body>
+    <div class="slideshow-container">
+      <!-- inject slide content dynamically via script -->
+    </div>
 
-<div class="mySlides">
-  <h3>Launching a server on the command line </h3>
-  <h4>Cloud deployments </h4>
-  <h4>Embed into external HTML </h4>
-  <h4><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h4>
-  </ul>
-</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<div class="mySlides">
-  <h2>Launching a server on the command line</h2>
-  <pre style=" hidden;font-family:monaco;"> 
-    panel serve app.ipynb 
-    panel serve app.py
-    </pre>
-    <p><a href="https://panel.holoviz.org/user_guide/Deploy_and_Export.html#launching-a-server-on-the-commandline">See Panel docs</a></p>    
-</div>
+    <script>
+      $(document).ready(function() {
+        function changeSlide(increment) {
+          let nextSlide = activeSlide + increment;
 
-<div class="mySlides">
-  <h2>Cloud deployment</h2>
-    <p><a href="hhttps://panel.holoviz.org/user_guide/Server_Deployment.html#cloud-deployments">See Panel docs</a></p>    
-</div>
+          if (nextSlide > slides.length) nextSlide = 1;
+          if (nextSlide < 1) nextSlide = slides.length;
 
-<div class="mySlides">
-  <h2>Embed into external HTML</h2>
-  <pre style=" hidden;font-family:monaco;"> 
-    dash.save('dash_embeded.html', embed=True)
-</pre>
-    <p><a href="https://panel.holoviz.org/user_guide/Overview.html#embedding">See Panel docs</a></p>
-</div>
+          for (let slide of slides) {
+            slide.style.display = "none";
+          }
 
-<div class="mySlides">
-  <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
-  <p><a href="https://pyscript.net/">pyscript.net</a></p>
-</div>
+          slides[nextSlide-1].style.display = "block";
+          activeSlide = nextSlide;
+        }
 
+        // create all slide elements
+        for (let i = 1; i <= 25; i++) {
+          let slide = `
+            <div class="mySlides">
+              <img src='assets/Overview/${i}.jpg'>
+            </div>
+          `;
 
-<div class="mySlides">
-    <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
-    <p><a href="https://pyscript.net/">pyscript.net</a></p>
-  </div> -->
-  
-<div class="mySlides">
-    <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
-    <py-script>
-        import hvplot.pandas
-        from bokeh.sampledata.autompg import autompg_clean as df
-    </py-script>
-    <py-repl output-mode="replace">
-      df.hvplot.scatter(x='mpg', y='hp')
-    </py-repl>
-  </div>
-  
+          $('.slideshow-container').append(slide);
+        }
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-</div>
+        let slide = `
+        <div class="mySlides">
+        <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
+        <py-script>
+            import hvplot.pandas
+            from bokeh.sampledata.autompg import autompg_clean as df
+        </py-script>
+        <py-repl output-mode="replace">
+          df.hvplot.scatter(x='mpg', y='hp')
+        </py-repl>
+       </div>
+        `;
+        $('.slideshow-container').append(slide);
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+        let slides = document.getElementsByClassName("mySlides");
+        let activeSlide = 1;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        // add slide navigation
+        $('.slideshow-container').append(
+          `<a id="prev" class="prev">❮</a>`
+        );
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+        $('.slideshow-container').append(
+          `<a id="next" class="next"">❯</a>`
+        );
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
+        document.getElementById("prev").addEventListener("click", function() { return changeSlide(-1) });
+        document.getElementById("next").addEventListener("click", function() { return changeSlide(1) });
 
-</body>
+        // initialize first slide
+        changeSlide(0);
+      });
+    </script>
+
+  </body>
 </html> 
