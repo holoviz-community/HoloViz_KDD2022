@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.1/dist/panel.min.js"></script>
+    <py-env>
+      - hvplot
+    </py-env>
+  </head>
+
+
+    <body>
+        <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
+        <py-script>
+            import hvplot.pandas
+            from bokeh.sampledata.autompg import autompg_clean as df
+        </py-script>
+        <py-repl output-mode="replace">
+          df.hvplot.scatter(x='mpg', y='hp')
+        </py-repl>
+    </body>
+</html>

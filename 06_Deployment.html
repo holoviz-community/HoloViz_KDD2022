@@ -8,9 +8,6 @@
     <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.1/dist/panel.min.js"></script>
     <py-env>
-      - numpy
-      - matplotlib
-      - pandas
       - hvplot
     </py-env>
     
@@ -110,7 +107,7 @@
         }
 
         // create all slide elements
-        for (let i = 1; i <= 2; i++) {
+        for (let i = 1; i <= 10; i++) {
           let slide = `
             <div class="mySlides">
               <img src='assets/Deployment/${i}.jpg'>
@@ -120,7 +117,16 @@
           $('.slideshow-container').append(slide);
         }
 
-        let slide = `
+
+        $('.slideshow-container').append(`
+        <div class="mySlides">
+        <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
+        <py-repl output-mode="replace">
+        </py-repl>
+       </div>
+        `);
+
+        $('.slideshow-container').append(`
         <div class="mySlides">
         <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
         <py-script>
@@ -131,8 +137,17 @@
           df.hvplot.scatter(x='mpg', y='hp')
         </py-repl>
        </div>
-        `;
-        $('.slideshow-container').append(slide);
+        `);
+
+        $('.slideshow-container').append(`
+        <div class="mySlides">
+        <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
+        <h1 style="text-align: center;">More demos</h1>
+        <p style="text-align: center;"><a href="https://holoviz-community.github.io/HoloViz_KDD2022/061_PyScript_hvPlot.html">PyScript hvPlot Examples</a></p>
+        <p style="text-align: center;"><a href="https://holoviz-community.github.io/HoloViz_KDD2022/062_PyScript_Panel.html">PyScript Panel Examples</a></p>
+        <p style="text-align: center;"><a href="https://pyscript.net/examples/">More PyScript Examples</a></p>
+       </div>
+        `);
 
         let slides = document.getElementsByClassName("mySlides");
         let activeSlide = 1;
