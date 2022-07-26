@@ -14,14 +14,16 @@
   </head>
 
 
-    <body>
-        <h2><em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em></h2>
-        <py-script>
-            import hvplot.pandas
-            from bokeh.sampledata.autompg import autompg_clean as df
-        </py-script>
-        <py-repl output-mode="replace">
-          df.hvplot.scatter(x='mpg', y='hp')
-        </py-repl>
-    </body>
+  <body>
+    <h2>
+      <em style="color: #FDA703; font-style: normal; font-weight: bold;">&lt;PyScript&gt;</em>
+    </h2>
+    <py-script>
+        import hvplot.pandas
+        from bokeh.sampledata.autompg import autompg_clean as df
+    </py-script>
+    <py-repl output-mode="replace">
+        df.hvplot.scatter(x='mpg', y='hp')
+    </py-repl>
+  </body>
 </html>
